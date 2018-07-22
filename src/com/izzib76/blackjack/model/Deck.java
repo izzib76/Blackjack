@@ -3,13 +3,13 @@ package com.izzib76.blackjack.model;
 import java.util.List;
 
 public class Deck {
-    private List<String> cards;
+    private List<Card> cards;
 
-    public List<String> getCards() {
+    public List<Card> getCards() {
         return cards;
     }
 
-    public void setCards(List<String> cards) {
+    public void setCards(List<Card> cards) {
         this.cards = cards;
     }
 }
