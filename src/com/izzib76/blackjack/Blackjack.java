@@ -2,10 +2,9 @@ package com.izzib76.blackjack;
 
 import com.izzib76.blackjack.model.Card;
 import com.izzib76.blackjack.model.Deck;
+import com.izzib76.blackjack.model.Hand;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Blackjack {
 
@@ -27,8 +26,17 @@ public class Blackjack {
             cardValues.stream().forEach(cardValue ->
                 playingCards.add(new Card(suit, cardValue, 1))));
 
-        //Add playing cards to the deck
+        //shuffle and add playing cards to the deck
+        Collections.shuffle(playingCards);
         deck.setCards(playingCards);
+
+        Hand hand = new Hand();
+        hand.setPlayerId(0);
+
+        //Deal starting hand to player
+        List<Card> playerZeroHand = Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0));
+
+        System.out.println(playerZeroHand.get(0).toString() + " " + playerZeroHand.get(1).toString());
 
 
     }
