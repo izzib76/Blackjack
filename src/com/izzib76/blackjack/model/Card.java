@@ -58,4 +58,8 @@ public class Card {
         this.number = n;
     }
 
+    public String toString(){
+        return this.suit + " " + this.value;
+    }
+
 }
