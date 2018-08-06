@@ -30,13 +30,15 @@ public class Blackjack {
         Collections.shuffle(playingCards);
         deck.setCards(playingCards);
 
-        Hand hand = new Hand();
-        hand.setPlayerId(0);
+        Hand player0 = new Hand();
+        player0.setPlayerId(0);
 
         //Deal starting hand to player
         List<Card> playerZeroHand = Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0));
+        player0.setCards(playerZeroHand);
 
-        System.out.println(playerZeroHand.get(0).toString() + " " + playerZeroHand.get(1).toString());
+        System.out.println(player0.toString());
+        System.out.println("deck size: " + deck.getCards().size());
 
 
     }

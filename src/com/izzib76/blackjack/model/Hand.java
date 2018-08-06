@@ -21,4 +21,10 @@ public class Hand {
     public void setCards(List<Card> cards) {
         this.cards = cards;
     }
+
+    public String toString() {
+        StringBuilder hand = new StringBuilder("Hand for player " + this.playerId + ": ");
+        this.cards.forEach(card -> hand.append(card.toString() + " "));
+        return hand.toString();
+    }
 }
