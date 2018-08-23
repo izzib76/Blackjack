@@ -23,8 +23,7 @@ public class Blackjack {
         //create the list of cards that needs to go into the deck. There will be 52 total cards
         List<Card> playingCards = new ArrayList<>();
         suits.stream().forEach(suit ->
-            cardValues.stream().forEach(cardValue ->
-                playingCards.add(new Card(suit, cardValue, 1))));
+            cardValues.stream().forEach(cardValue -> playingCards.add(new Card(suit, cardValue))));
 
         //shuffle and add playing cards to the deck
         Collections.shuffle(playingCards);
@@ -34,12 +33,12 @@ public class Blackjack {
         player0.setPlayerId(0);
 
         //Deal starting hand to player
+        //List<Card> playerZeroHand = Arrays.asList(new Card("Heart", "A"), new Card("Spade", "A"));
         List<Card> playerZeroHand = Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0));
         player0.setCards(playerZeroHand);
 
         System.out.println(player0.toString());
         System.out.println("deck size: " + deck.getCards().size());
-
 
     }
 }
