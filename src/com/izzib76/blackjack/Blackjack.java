@@ -9,7 +9,10 @@ import java.util.*;
 public class Blackjack {
 
     public static void main(String[] args){
-        System.out.println("Hello World");
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("How many people are playing?");
+        int numPlayers = scan.nextInt();
 
         //create the playing deck
         Deck deck = new Deck();
@@ -29,15 +32,18 @@ public class Blackjack {
         Collections.shuffle(playingCards);
         deck.setCards(playingCards);
 
-        Hand player0 = new Hand();
-        player0.setPlayerId(0);
+        List<Hand> hands = new ArrayList<>();
 
-        //Deal starting hand to player
-        //List<Card> playerZeroHand = Arrays.asList(new Card("Heart", "A"), new Card("Spade", "A"));
-        List<Card> playerZeroHand = Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0));
-        player0.setCards(playerZeroHand);
+        for(int i=1 ; i<=numPlayers ; i++){
+            Hand hand = new Hand();
+            hand.setPlayerId(i);
+            hand.setCards(Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0)));
+            hands.add(hand);
+            System.out.println(hand.toString());
+        }
 
-        System.out.println(player0.toString());
+
+
         System.out.println("deck size: " + deck.getCards().size());
 
     }
