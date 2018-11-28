@@ -13,6 +13,11 @@ public class Blackjack {
 
         System.out.println("How many people are playing?");
         int numPlayers = scan.nextInt();
+        //BUG-001
+        while (numPlayers > 7){
+            System.out.println("There can only be a max of 7 players. Please re-enter number playing");
+            numPlayers = scan.nextInt();
+        }
 
         //create the playing deck
         Deck deck = new Deck();
