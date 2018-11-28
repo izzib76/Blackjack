@@ -54,7 +54,10 @@ public class Blackjack {
                 System.out.println(hands.get(i).toString());
                 System.out.println("What action would you like to take? Stand(S) or Hit(H)?");
                 String action = scan.next();
-
+                if(action.equalsIgnoreCase("H")){
+                    hands.get(i).addCard(deck.getCards().remove(0));
+                    System.out.println(hands.get(i).toString());
+                }
             }
             bust = true;
         }

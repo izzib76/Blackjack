@@ -1,5 +1,6 @@
 package com.izzib76.blackjack.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Hand {
@@ -21,6 +22,13 @@ public class Hand {
 
     public void setCards(List<Card> cards) {
         this.cards = cards;
+    }
+
+    public void addCard(Card card){
+        List<Card> temp = new ArrayList<>();
+        temp.addAll(this.cards);
+        temp.add(card);
+        setCards(temp);
     }
 
     public String toString() {
