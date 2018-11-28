@@ -58,15 +58,15 @@ public class Blackjack {
                 if(action.equalsIgnoreCase("H")){
                     hands.get(i).addCard(deck.getCards().remove(0));
                     System.out.println(hands.get(i).toString());
+                    if(hands.get(i).calculatePointValue() > 21){
+                        bust = true;
+                    }
                 }
                 if(action.equalsIgnoreCase("S")){
                     System.out.println(hands.get(i).toString());
                 }
+                System.out.println();
             }
-            bust = true;
         }
-
-        System.out.println("deck size: " + deck.getCards().size());
-
     }
 }
