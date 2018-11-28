@@ -49,6 +49,7 @@ public class Blackjack {
         //play game until someone busts
         boolean bust = false;
         while(!bust){
+            //loop through players and allow them
             for(int i=0 ; i<numPlayers ; i++){
                 System.out.println("Player " + i + "'s turn:");
                 System.out.println(hands.get(i).toString());
@@ -56,6 +57,9 @@ public class Blackjack {
                 String action = scan.next();
                 if(action.equalsIgnoreCase("H")){
                     hands.get(i).addCard(deck.getCards().remove(0));
+                    System.out.println(hands.get(i).toString());
+                }
+                if(action.equalsIgnoreCase("S")){
                     System.out.println(hands.get(i).toString());
                 }
             }
