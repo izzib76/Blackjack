@@ -39,15 +39,25 @@ public class Blackjack {
 
         List<Hand> hands = new ArrayList<>();
 
-        for(int i=1 ; i<=numPlayers ; i++){
+        //Deal hands for all players
+        for(int i=0 ; i<numPlayers ; i++){
             Hand hand = new Hand();
             hand.setPlayerId(i);
             hand.setCards(Arrays.asList(deck.getCards().remove(0), deck.getCards().remove(0)));
             hands.add(hand);
-            System.out.println(hand.toString());
         }
+        //play game until someone busts
+        boolean bust = false;
+        while(!bust){
+            for(int i=0 ; i<numPlayers ; i++){
+                System.out.println("Player " + i + "'s turn:");
+                System.out.println(hands.get(i).toString());
+                System.out.println("What action would you like to take? Stand(S) or Hit(H)?");
+                String action = scan.next();
 
-
+            }
+            bust = true;
+        }
 
         System.out.println("deck size: " + deck.getCards().size());
 
