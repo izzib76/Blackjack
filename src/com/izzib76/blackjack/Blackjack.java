@@ -49,6 +49,7 @@ public class Blackjack {
         //play game until someone busts
         boolean bust = false;
         while(!bust){
+            int standCount = 0;
             //loop through players and allow them
             for(int i=0 ; i<numPlayers ; i++){
                 System.out.println("Player " + i + "'s turn:");
@@ -64,9 +65,23 @@ public class Blackjack {
                 }
                 if(action.equalsIgnoreCase("S")){
                     System.out.println(hands.get(i).toString());
+                    standCount++;
+                    if (standCount == numPlayers) {
+                        bust = true;
+                    }
                 }
                 System.out.println();
             }
         }
+        int maxScore = 0, winningPlayer = 10;
+        for(int i=0 ; i<numPlayers ; i++){
+            Hand currentHand = hands.get(i);
+            if(currentHand.calculatePointValue() <= 21 && currentHand.calculatePointValue() > maxScore){
+                maxScore = currentHand.calculatePointValue();
+                winningPlayer = currentHand.getPlayerId();
+            }
+        }
+
+        System.out.println("The winning player is Player " + winningPlayer);
     }
 }
