@@ -3,69 +3,37 @@ package main.blackjack.model;
 public class Card {
     private String suit;
     private String value;
-    private int number;
+    private int score;
 
-//    /**
-//     * @param s suit
-//     * @param v face value
-//     * @param n point number
-//     */
-//    public Card(String s, String v, int n) {
-//        this.suit = s;
-//        this.value = v;
-//        this.number = n;
-//    }
 
-    /**
-     * @param x suit
-     * @param y face value
-     */
-    public Card(String x, String y) {
-        this.suit = x;
-        this.value = y;
-        this.number = determinePointValueFromFaceValue(y);
+    public Card(String suit, String faceValue) {
+        this.suit = suit;
+        this.value = faceValue;
+        this.score = determinePointValueFromFaceValue(faceValue);
     }
 
-    /**
-     * @return the suit of the card
-     */
     public String getSuit() {
         return this.suit;
     }
 
-    /**
-     * @param x a string representing the suit of the card
-     */
-    public void setSuit(String x) {
-        this.suit = x;
+    public void setSuit(String suit) {
+        this.suit = suit;
     }
 
-    /**
-     * @return the face value of the card
-     */
     public String getValue() {
         return this.value;
     }
 
-    /**
-     * @param x the face value of the card
-     */
-    public void setValue(String x) {
-        this.value = x;
+    public void setValue(String faceValue) {
+        this.value = faceValue;
     }
 
-    /**
-     * @return the point value of the card
-     */
-    public int getNumber() {
-        return this.number;
+    public int getScore() {
+        return this.score;
     }
 
-    /**
-     * @param x the point value of the card
-     */
-    public void setNumber(int x) {
-        this.number = x;
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public int determinePointValueFromFaceValue(String faceValue){
