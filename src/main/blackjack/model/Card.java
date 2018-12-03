@@ -5,16 +5,16 @@ public class Card {
     private String value;
     private int number;
 
-    /**
-     * @param s suit
-     * @param v face value
-     * @param n point number
-     */
-    public Card(String s, String v, int n) {
-        this.suit = s;
-        this.value = v;
-        this.number = n;
-    }
+//    /**
+//     * @param s suit
+//     * @param v face value
+//     * @param n point number
+//     */
+//    public Card(String s, String v, int n) {
+//        this.suit = s;
+//        this.value = v;
+//        this.number = n;
+//    }
 
     /**
      * @param s suit
