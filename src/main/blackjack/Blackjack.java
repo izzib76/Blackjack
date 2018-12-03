@@ -12,6 +12,7 @@ public class Blackjack {
         Scanner scan = new Scanner(System.in);
 
         //TODO: Extract logic into method.
+        //TODO: Add UI Elements to make gameplay prettier
         System.out.println("How many people are playing?");
         int numPlayers = scan.nextInt();
         //BUG-001
@@ -88,7 +89,7 @@ public class Blackjack {
 
         int winningPlayer = game.playGame(numPlayers);
 
-
+        //TODO: Add UI Elements to make gameplay prettier
         System.out.println("The winning player is Player " + winningPlayer);
     }
 }

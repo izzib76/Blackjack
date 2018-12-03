@@ -44,6 +44,7 @@ public class Game {
             int standCount = 0;
             //loop through players and allow them to chose their action.
             for(int i=0 ; i<numPlayers ; i++){
+                //TODO: Add UI Elements to make gameplay prettier
                 System.out.println("Player " + i + "'s turn:");
                 System.out.println(hands.get(i).toString());
                 System.out.println("What action would you like to take? Stand(S) or Hit(H)?");
