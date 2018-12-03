@@ -1,4 +1,4 @@
-package com.izzib76.blackjack.model;
+package main.blackjack.model;
 
 import java.util.ArrayList;
 import java.util.List;

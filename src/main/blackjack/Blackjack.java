@@ -1,8 +1,8 @@
-package com.izzib76.blackjack;
+package main.blackjack;
 
-import com.izzib76.blackjack.model.Card;
-import com.izzib76.blackjack.model.Deck;
-import com.izzib76.blackjack.model.Hand;
+import main.blackjack.model.Card;
+import main.blackjack.model.Deck;
+import main.blackjack.model.Hand;
 
 import java.util.*;
 
