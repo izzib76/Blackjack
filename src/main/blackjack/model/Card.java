@@ -17,13 +17,13 @@ public class Card {
 //    }
 
     /**
-     * @param s suit
-     * @param v face value
+     * @param x suit
+     * @param y face value
      */
-    public Card(String s, String v) {
-        this.suit = s;
-        this.value = v;
-        this.number = determinePointValueFromFaceValue(v);
+    public Card(String x, String y) {
+        this.suit = x;
+        this.value = y;
+        this.number = determinePointValueFromFaceValue(y);
     }
 
     /**
@@ -34,10 +34,10 @@ public class Card {
     }
 
     /**
-     * @param s a string representing the suit of the card
+     * @param x a string representing the suit of the card
      */
-    public void setSuit(String s) {
-        this.suit = s;
+    public void setSuit(String x) {
+        this.suit = x;
     }
 
     /**
@@ -48,10 +48,10 @@ public class Card {
     }
 
     /**
-     * @param v the face value of the card
+     * @param x the face value of the card
      */
-    public void setValue(String v) {
-        this.value = v;
+    public void setValue(String x) {
+        this.value = x;
     }
 
     /**
@@ -62,10 +62,10 @@ public class Card {
     }
 
     /**
-     * @param n the point value of the card
+     * @param x the point value of the card
      */
-    public void setNumber(int n) {
-        this.number = n;
+    public void setNumber(int x) {
+        this.number = x;
     }
 
     public int determinePointValueFromFaceValue(String faceValue){
@@ -74,7 +74,7 @@ public class Card {
             case "Q" : return 10;
             case "J" : return 10;
             case "A" : return 11;
-            default : return new Integer(faceValue);
+            default : return Integer.valueOf(faceValue);
         }
     }
 
