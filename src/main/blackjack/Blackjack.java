@@ -1,8 +1,5 @@
 package main.blackjack;
 
-import main.blackjack.model.Card;
-import main.blackjack.model.Deck;
-import main.blackjack.model.Hand;
 
 import java.util.*;
 
@@ -11,7 +8,6 @@ public class Blackjack {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        //TODO: Extract logic into method.
         //TODO: Add UI Elements to make gameplay prettier
         System.out.println("How many people are playing?");
         int numPlayers = scan.nextInt();
