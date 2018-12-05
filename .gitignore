@@ -1,6 +1,6 @@
 .gradle
 /out/*
-/.idea/*
+.idea/*
 /lib/*
 *.iml
 

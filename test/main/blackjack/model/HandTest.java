@@ -21,13 +21,47 @@ class HandTest {
     }
 
     @Test
-    public void should_correctly_handle_multiple_aces_in_one_hand(){
+    public void should_correctly_handle_multiple_aces_in_one_hand() {
         Hand testHand = new Hand();
+
         testHand.setCards(Arrays.asList(
                 new Card("Hearts", "A"),
                 new Card("Diamonds", "A")));
-        testHand.calculatePointValue();
-        assertTrue(true);
+        int score = testHand.calculatePointValue();
+        assertEquals(12, score);
+        assertEquals(1, testHand.getCards().get(0).getScore());
+        assertEquals(11, testHand.getCards().get(1).getScore());
+    }
+
+    @Test
+    public void should_count_ace_as_elven_when_not_bust() {
+        Hand testHand = new Hand();
+
+        testHand.setCards(Arrays.asList(
+                new Card("Hearts", "K"),
+                new Card("Diamonds", "A")));
+        int score = testHand.calculatePointValue();
+        assertEquals(21, score);
+        assertEquals(10, testHand.getCards().get(0).getScore());
+        assertEquals(11, testHand.getCards().get(1).getScore());
+    }
+
+    @Test
+    public void should_count_ace_as_one_to_prevent_bust() {
+        Hand testHand = new Hand();
+
+        testHand.setCards(Arrays.asList(
+                new Card("Hearts", "K"),
+                new Card("Diamonds", "A"),
+                new Card("Spades", "5")));
+        int score = testHand.calculatePointValue();
+        assertEquals(16, score);
+        assertEquals(10, testHand.getCards().get(0).getScore());
+        assertEquals(1, testHand.getCards().get(1).getScore());
+        assertEquals(5, testHand.getCards().get(2).getScore());
+
+
+
     }
 
     @Test

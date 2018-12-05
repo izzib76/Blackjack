@@ -41,12 +41,12 @@ public class Hand {
     public int calculatePointValue() {
         int temp = 0;
         for(Card card : cards) {
-            temp += card.getNumber() ;
+            temp += card.getScore() ;
         }
         if (temp > 21){
             for (Card card : cards) {
-                if(card.getValue().equals("A") && card.getNumber() == 11 && temp > 21) {
-                    card.setNumber(1);
+                if(card.getValue().equals("A") && card.getScore() == 11 && temp > 21) {
+                    card.setScore(1);
                     temp -= 10;
                 }
             }
