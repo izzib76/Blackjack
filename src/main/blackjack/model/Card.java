@@ -5,47 +5,34 @@ public class Card {
     private String value;
     private int score;
 
-    /**
-     * @param x suit
-     * @param y face value
-     */
-    public Card(String x, String y) {
-        this.suit = x;
-        this.value = y;
-        this.score = determineScoreFromFaceValue(y);
+    public Card(String suit, String faceValue) {
+        this.suit = suit;
+        this.value = faceValue;
+        this.score = determineScoreFromFaceValue(faceValue);
     }
 
     public String getSuit() {
         return this.suit;
     }
 
-    /**
-     * @param x a string representing the suit of the card
-     */
-    public void setSuit(String x) {
-        this.suit = x;
+    public void setSuit(String suit) {
+        this.suit = suit;
     }
 
     public String getValue() {
         return this.value;
     }
 
-    /**
-     * @param x the face value of the card
-     */
-    public void setValue(String x) {
-        this.value = x;
+    public void setValue(String faceValue) {
+        this.value = faceValue;
     }
 
     public int getScore() {
         return this.score;
     }
 
-    /**
-     * @param x the point value of the card
-     */
-    public void setScore(int x) {
-        this.score = x;
+    public void setScore(int score) {
+        this.score = score;
     }
 
     public int determineScoreFromFaceValue(String faceValue){
