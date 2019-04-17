@@ -8,13 +8,14 @@ public class Blackjack {
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
+        Game game = new Game();
+
         //TODO: Add UI Elements to make gameplay prettier
         System.out.println("How many people are playing?");
-        int numPlayers = scan.nextInt();
-        //BUG-001
-        while (numPlayers > 7){
-            System.out.println("There can only be a max of 7 players. Please re-enter number playing");
-            numPlayers = scan.nextInt();
+        int players = scan.nextInt();
+        // BUG-001
+        while (!game.setNumberPlayers(players)){
+            players = scan.nextInt();
         }
 
 //        //create the playing deck
@@ -81,9 +82,9 @@ public class Blackjack {
 //        }
 
 
-        Game game = new Game();
 
-        int winningPlayer = game.playGame(numPlayers);
+
+        int winningPlayer = game.playGame();
 
         //TODO: Add UI Elements to make gameplay prettier
         System.out.println("The winning player is Player " + winningPlayer);

@@ -8,7 +8,24 @@ import java.util.*;
 
 public class Game {
 
-    public int playGame(int numPlayers) {
+    //BUG-001
+    private int numPlayers;
+
+    public boolean setNumberPlayers(int numPlayers){
+        if (numPlayers > 7 ){
+            System.out.println("There can only be a max of 7 players. Please re-enter number playing");
+            return false;
+        } else if (numPlayers == 0){
+            System.out.println("A minimum of one player is needed. Please re-enter number playing");
+            return false;
+        }
+        else {
+            this.numPlayers = numPlayers;
+            return true;
+        }
+    }
+
+    public int playGame() {
         Scanner scan = new Scanner(System.in);
 
         //create the playing deck
