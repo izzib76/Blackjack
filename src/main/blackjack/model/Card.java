@@ -6,13 +6,13 @@ public class Card {
     private int score;
 
     /**
-     * @param x suit
-     * @param y face value
+     * @param suit suit
+     * @param faceValue face value
      */
-    public Card(String x, String y) {
-        this.suit = x;
-        this.value = y;
-        this.score = determineScoreFromFaceValue(y);
+    public Card(String suit, String faceValue) {
+        this.suit = suit;
+        this.value = faceValue;
+        this.score = determineScoreFromFaceValue(faceValue);
     }
 
     public String getSuit() {
