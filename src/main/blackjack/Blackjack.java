@@ -87,6 +87,10 @@ public class Blackjack {
         int winningPlayer = game.playGame();
 
         //TODO: Add UI Elements to make gameplay prettier
-        System.out.println("The winning player is Player " + winningPlayer);
+        if(winningPlayer == 10){
+            System.out.println("No one won the game.");
+        } else {
+            System.out.println("The winning player is Player " + winningPlayer);
+        }
     }
 }

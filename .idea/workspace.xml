@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="618d535b-0288-4589-900a-93c07bdcf37d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/blackjack/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/blackjack/Blackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/blackjack/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/blackjack/model/Hand.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +33,10 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,49 +54,25 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="32" />
-          <entry key="java" value="3117" />
+          <entry key="java" value="3187" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3117" />
+          <entry key="JAVA" value="3187" />
           <entry key="PLAIN_TEXT" value="34" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/main/blackjack/model/HandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/blackjack/Blackjack.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -102,22 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Card.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-              <folding>
-                <element signature="e#659#660#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#955#956#0" expanded="true" />
-                <element signature="e#1052#1053#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
-                <element signature="e#1171#1172#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1332#1333#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="107">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -125,7 +89,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Deck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="135">
               <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="e#139#140#0" expanded="true" />
@@ -141,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Hand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -152,7 +116,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/blackjack/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="-385">
               <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -184,14 +148,15 @@
         <option value="$PROJECT_DIR$/src/test/blackjack/HandTest.java" />
         <option value="$PROJECT_DIR$/src/test/blackjack/model/HandTest.java" />
         <option value="$PROJECT_DIR$/src/main/blackjack/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/blackjack/Blackjack.java" />
         <option value="$PROJECT_DIR$/test/main/blackjack/model/HandTest.java" />
         <option value="$PROJECT_DIR$/src/main/blackjack/model/Card.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/blackjack/model/Hand.java" />
+        <option value="$PROJECT_DIR$/src/main/blackjack/Blackjack.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="20" />
     <option name="y" value="43" />
     <option name="width" value="1660" />
@@ -203,7 +168,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -297,23 +261,18 @@
               <item name="Blackjack" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Blackjack" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blackjack" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544025028206" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556218153618" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -532,8 +491,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1660" height="957" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18788628" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18974042" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -546,8 +506,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994253" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3283237" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49967298" visible="true" weight="0.45086706" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3283237" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49967298" weight="0.24624278" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.500327" side_tool="true" weight="0.3269461" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3283237" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32814372" />
@@ -611,9 +571,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/izzib76/blackjack/model/HandTest.java" />
     <entry file="file://$PROJECT_DIR$/src/test/blackjack/model/HandTest.java" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/main/blackjack/model/HandTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="32" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Deck.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="135">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="e#139#140#0" expanded="true" />
@@ -624,20 +601,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/blackjack/Blackjack.java">
+    <entry file="file://$PROJECT_DIR$/src/main/blackjack/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="-385">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/main/blackjack/model/HandTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Hand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -646,49 +623,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Card.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding>
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1052#1053#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-            <element signature="e#1171#1172#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1332#1333#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="107">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/blackjack/model/Hand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/blackjack/Blackjack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/blackjack/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="270">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
         </state>
       </provider>
     </entry>

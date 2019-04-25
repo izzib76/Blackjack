@@ -6,7 +6,6 @@ import java.util.List;
 public class Hand {
     private List<Card> cards;
     private int playerId;
-    private int pointValue;
 
     public int getPlayerId() {
         return playerId;
